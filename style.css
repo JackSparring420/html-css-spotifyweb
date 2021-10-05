@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#wrapper {
+    height: calc(100vh - 90px);
+}
+
+#wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* aside  */
+
+aside{
+    width: 230px;
+    height: 100%;
+    float: left;
+    background-color: black;
+    color: #a3a3a3;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 80%;
+    margin: 20px 20px 30px 20px;
+}
+
+#logo_small{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    display: none;
+}
+
+
+#nav_up div{
+    padding: 10px 20px;
+}
+
+#nav_up img{
+    width: 40px;
+}
+
+.nav_flex{
+    display: flex;
+    align-items: center;
+}
+
+#nonloso {
+    color: white;
+    border-left: 3px solid #adff2f;
+}
+
+aside h3 {
+    padding: 20px;
+    color: white;
+}
+#new_playlist {
+    display: flex;
+    align-items:center;
+    padding: 0 20px;
+}
+
+#new_playlist i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+#nav_playlist{
+    padding: 20px;
+ 
+}
+
+#nav_playlist ul{
+    margin-bottom: 10px;
+    list-style-type:none;
+}
+
+#nav_playlist li{
+    margin-bottom: 10px;
+}
+
+
+#footer_aside{
+    bottom: 0;
+    margin: 5px 20px;
+    width: 90%;
+}
+
+#footer_aside img{
+    width: 20px;
+    margin-right: 10px;
+}
+#footer_aside .nav_flex{
+    margin: 15px 0;
+}
+
+#profile {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    background-image: url(img/profile.svg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+/* fine aside  */
+
+
+main{
+    width: calc(100% - 230px);
+    height: 100%;
+    float: left;
+    background-color: #141922;
+}
+
+
+footer {
+    height: 90px;
+    background-color: #282828;
+}
+
+
+/* responsive aside  */
+
+@media all and (max-width:550px) {
+    aside{
+        width: 80px;
+    }
+
+    #logo_small{
+        display: inline-block;
+    }
+
+    #logo, .nav_flex span, aside h3, #new_playlist, #nav_playlist, hr {
+        display: none;
+    }
+
+    #nonloso{
+        border: none;
+    }
+
+    main {
+        width: calc(100% - 80px);
+    }
+
+}
+
+@media all and (max-height:800px) {
+    #nav_playlist ul{
+        overflow-y: scroll;
+        height: 200px;
+    }
+
+    #footer_aside{
+        display: none;
+    }
+}
