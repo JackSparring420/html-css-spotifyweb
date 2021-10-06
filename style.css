@@ -204,8 +204,8 @@ nav ul div {
     left: 40%;
 }
 
-.row{
-    margin: 20px 0 50px 20px;
+.conteiner{
+    margin: 50px 0 50px 20px;
 }
 
 .row::after{
@@ -214,13 +214,20 @@ nav ul div {
     clear: both;
 }
 
+.row{
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+
+
         /* card  */
 .card {
-    float: left;
-    margin: 25px 50px 25px 0;
+    margin-top: 30px;
     position: relative;
-    width: 300px;
-    height: 430px;
+    width: 13vw;
+    height: 17vw;
     text-align: center;
   
 }
@@ -228,8 +235,8 @@ nav ul div {
 
 .img_song {
     text-align: center;
-    width: 300px;
-    height: 300px;
+    width: 13vw;
+    height: 13vw;
 }
 
 .img_song img{
