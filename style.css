@@ -21,7 +21,7 @@ body{
 
 /* aside  */
 
-aside{
+aside {
     width: 230px;
     height: 100%;
     float: left;
@@ -32,17 +32,17 @@ aside{
     flex-direction: column;
 }
 
-#conteiner_up_aside{
-    height: calc(100% - 150px);
+#conteiner_up_aside {
+    height: calc(100% - 140px);
     overflow: hidden;
 }
 
-#logo{
+#logo {
     width: 80%;
     margin: 20px 20px 30px 20px;
 }
 
-#logo_small{
+#logo_small {
     width: 40px;
     height: 40px;
     margin: 20px;
@@ -50,15 +50,20 @@ aside{
 }
 
 
-#nav_up div{
+#nav_up div {
     padding: 10px 20px;
 }
 
-#nav_up img{
+#nav_up img {
     width: 40px;
 }
 
-.nav_flex{
+#nav_up span:hover  {
+    color: white;
+    cursor: pointer;
+}
+
+.nav_flex {
     display: flex;
     align-items: center;
 }
@@ -83,14 +88,20 @@ aside h3 {
     margin-right: 10px;
 }
 
+#new_playlist:hover {
+    color: white;
+    cursor: pointer;
+}
+
 #nav_playlist{
-    padding: 20px;
+    overflow: auto;
+    height: 25vh;
+    margin-left: 20px;
+    margin-top: 10px;
  
 }
 
-#nav_playlist ul{
-    height: 25vh;
-    margin-bottom: 10px;
+#nav_playlist ul {
     list-style-type:none;
 }
 
@@ -98,17 +109,26 @@ aside h3 {
     margin-bottom: 10px;
 }
 
-
-#footer_aside{
-    margin: 5px 20px;
-    width: 85%;
+nav li:hover {
+    color: white;
+    cursor: pointer;
 }
 
-#footer_aside img{
+#footer_aside {
+    margin: 5px 20px;
+    width: 85%;
+    position: fixed;
+}
+
+#footer_aside hr{
+    width: 200px;
+}
+
+#footer_aside img {
     width: 20px;
     margin-right: 10px;
 }
-#footer_aside .nav_flex{
+#footer_aside .nav_flex {
     margin: 15px 0;
 }
 
@@ -121,11 +141,19 @@ aside h3 {
     border-radius: 50%;
     margin-right: 10px;
 }
+#ba:hover {
+    color:white;
+}
+
+#bb{
+    color: white;
+}
 
 
 
 /* fine aside  */
 
+/* main  */
 
 main {
     width: calc(100% - 230px);
@@ -140,11 +168,11 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-main h1, main h3{
+main h1, main h3 {
     color: white;
 }
 
-#header {
+#header_main {
     width: calc(100% - 230px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -152,6 +180,7 @@ main h1, main h3{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 99;
 }
 
 #upgrade {
@@ -159,7 +188,7 @@ main h1, main h3{
     border: solid 2px white;
     border-radius: 25px;
     padding: 15px 30px;
-    margin-right: 25px;
+    margin-right: 35px;
     transition: all 2s;
 }
 
@@ -167,7 +196,7 @@ main h1, main h3{
     font-size: 30px;
 }
 
-nav ul li a {
+main nav ul li a {
     color: gray;
     text-decoration: none;
 }
@@ -176,13 +205,13 @@ main nav{
     margin-top: 120px;
 }
 
-nav ul {
+main nav ul {
     list-style-type:none;
     text-align: center;
     
 }
 
-nav ul li {
+main nav ul li {
     display: inline;
     margin-right: 15px;
     position: relative;
@@ -208,11 +237,6 @@ nav ul div {
     margin: 50px 0 50px 20px;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .row{
     display: flex;
@@ -227,9 +251,9 @@ nav ul div {
     margin-top: 30px;
     position: relative;
     width: 13vw;
-    height: 17vw;
+    height: auto;
     text-align: center;
-  
+    /* overflow: hidden; */
 }
 
 
@@ -259,7 +283,7 @@ nav ul div {
 
 .card i{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -267,18 +291,9 @@ nav ul div {
     display: none;
 }
 
-.card:last-child{
-    margin-right: 0;
-}
-
  .circle img{
      border-radius: 50%;
  }
-
-
-
-
-
 
 
 
@@ -312,6 +327,16 @@ footer i:hover {
     margin-right: 15px;
 }
 
+.fa-heart:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-folder:hover{
+    color: white;
+    cursor: pointer;
+}
+
 #foot_brano {
     display: flex;
     align-items:center;
@@ -334,28 +359,33 @@ footer h4 {
     color: white;
 }
 
+#nome:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
     /* center  */
 
 #foot_center {
     width: 50%;
     height: auto;
     color: white;
-    /* float: left; */
 }
 
 
 #foot_center_up {
-    height: 50%;
+    height: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     padding: 8px;
+    overflow: hidden;
 }
 
 #foot_center_down {
-    height: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -365,17 +395,40 @@ footer h4 {
     font-size: 30px;
 }
 
+.fa-play-circle:hover{
+    font-size: 40px;
+}
+
 .bar_player {
     width: calc(90% - 200px);
     height: 8px;
     background-color: #5a5a5a;
     border-radius: 25px;
 }
-.bar_player div {
+.bar_full {
     width: 10%;
     background-color: white;
     height: 100%;
     border-radius: 25px;
+}
+
+.bar_point {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: -12px;
+    left: 9.5%;
+    display: none;
+}
+
+.bar_player:hover .bar_full {
+    background-color: greenyellow;
+}
+
+.bar_player:hover .bar_point{
+    display: block;
 }
 
 
@@ -396,16 +449,35 @@ footer h4 {
     width: 40%;
 }
 
-#volume div{
-    width: 30%;
+
+
+
+
+
+
+
+/* responsive  */
+
+
+@media all and (max-height: 750px) {
+   
+    #nav_playlist ul{
+        overflow-y: scroll;
+        height: auto;
+    }
+
+    #nav_playlist{
+        height: 500px;
+    }
+
+    #footer_aside{
+        display: none;
+    }
+
+    #conteiner_up_aside {
+        height: 100%;
+    }
 }
-
-
-
-
-
-
-/* responsive aside  */
 
 @media all and (max-width:550px) {
     aside{
@@ -433,20 +505,18 @@ footer h4 {
         width: calc(100% - 80px);
     }
 
+    .card{
+        width: 36vw;
+    }
+
+    .img_song {
+        text-align: center;
+        width: 36vw;
+        height: 36vw;
+    }
+
+    #header_main {
+        width: calc(100% - 80px);
+
 }
 
-/* @media all and (max-height: 750px) {
-   
-    #nav_playlist ul{
-        overflow-y: scroll;
-        height: auto;
-    }
-
-    #nav_playlist{
-        height: 500px;
-    }
-
-    #footer_aside{
-        display: none;
-    }
-} */
