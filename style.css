@@ -20,7 +20,6 @@ body {
 }
 
 /* aside  */
-
 aside {
     width: 230px;
     height: 100%;
@@ -94,10 +93,10 @@ aside h3 {
 
 #nav_playlist {
     overflow: auto;
-    height: 25vh;
+    height: 26vh;
     margin-left: 20px;
     margin-top: 10px;
- 
+
 }
 
 #nav_playlist ul {
@@ -262,6 +261,7 @@ nav ul div {
 
 .title_song h3 {
     margin: 20px 0 10px 0;
+    font-size: 16px;
 }
 
 .img_song:hover img {
@@ -338,7 +338,7 @@ footer i:hover {
 #sinister {
     width: 40px;
     height: 40px;
-    margin: 0 1vw; 
+    margin: 0 0.5vw 0 1vw; 
 }
 
 #foot_brano img {
@@ -450,12 +450,7 @@ footer .fa-play-circle:hover{
 @media all and (max-height: 750px) {
    
     #nav_playlist ul{
-        overflow-y: scroll;
         height: auto;
-    }
-
-    #nav_playlist{
-        height: 500px;
     }
 
     #footer_aside{
@@ -471,7 +466,9 @@ footer .fa-play-circle:hover{
     .card {
         width: 22vw;
     }
-    
+    #nav_playlist{
+        height: 30vh;
+    }
     
     .img_song {
         width: 22vw;
