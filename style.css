@@ -127,20 +127,162 @@ aside h3 {
 /* fine aside  */
 
 
-main{
+main {
     width: calc(100% - 230px);
     height: 100%;
     float: left;
     background-color: #141922;
+    color: gray;
+    overflow: auto;
 }
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main h1, main h3{
+    color: white;
+}
+
+#header {
+    width: calc(100% - 230px);
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#upgrade {
+    font-size: 20px;
+    border: solid 2px white;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin-right: 25px;
+    transition: all 2s;
+}
+
+#upgrade:hover {
+    font-size: 30px;
+}
+
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+main nav{
+    margin-top: 120px;
+}
+
+nav ul {
+    list-style-type:none;
+    text-align: center;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    position: relative;
+}
+
+nav ul li div {
+    width: 25px;
+    height: 3px;
+    background-color: greenyellow;
+    display: inline;
+}
+
+nav ul div {
+    width: 25px;
+    height: 3px;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: -5px;
+    left: 40%;
+}
+
+.row{
+    margin: 20px 0 50px 20px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+        /* card  */
+.card {
+    float: left;
+    margin: 25px 50px 25px 0;
+    position: relative;
+    width: 300px;
+    height: 430px;
+    text-align: center;
+  
+}
+
+
+.img_song {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.img_song img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.title_song h3 {
+    margin: 20px 0 10px 0;
+}
+
+.img_song:hover img{
+    opacity: 0.5;
+}
+
+.img_song:hover i{
+    display: inline;
+}
+
+.card i{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    display: none;
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+ .circle img{
+     border-radius: 50%;
+ }
+
+
+
+
+
+
+
 
  /* inizio footer  */
  
 footer {
     height: 90px;
     background-color: #282828;
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: gray;
 }
 
@@ -153,6 +295,7 @@ footer i:hover {
     float: left;
     height: 100%;
     width: 25%;
+    height: auto;
     display: flex;
     align-items:center;
 
@@ -188,8 +331,9 @@ footer h4 {
 
 #foot_center {
     width: 50%;
+    height: auto;
     color: white;
-    float: left;
+    /* float: left; */
 }
 
 
@@ -232,12 +376,13 @@ footer h4 {
 #foot_dx {
     height: 100%;
     width: 25%;
+    height: 20%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
     padding-right: 20px;
-    float: left;
+    /* float:   left; */
 }
 
 #volume{
