@@ -471,22 +471,22 @@ footer .fa-play-circle:hover{
 
 @media all and (max-width:730px){
     .card {
-        width: 22vw;
+        width: 30vw;
     }
     #nav_playlist{
         height: 30vh;
     }
     
     .img_song {
-        width: 22vw;
-        height: 22vw;
+        width: 30vw;
+        height: 30vw;
     }
     .row{
         justify-content: space-around;
     }
 
     .card i {
-        font-size: 9vw;
+        font-size: 12vw;
     }
     
 }
