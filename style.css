@@ -19,6 +19,7 @@ body {
     clear: both;
 }
 
+
 /* aside  */
 aside {
     width: 230px;
@@ -92,8 +93,6 @@ aside h3 {
 }
 
 #nav_playlist {
-    overflow: auto;
-    height: 26vh;
     margin-left: 20px;
     margin-top: 10px;
 
@@ -101,6 +100,12 @@ aside h3 {
 
 #nav_playlist ul {
     list-style-type:none;
+    overflow: auto;
+    height: 26vh;
+}
+
+ul:-webkit-scrollbar {
+    display: none;
 }
 
 #nav_playlist li{
@@ -147,6 +152,7 @@ nav li:hover {
 #bb {
     color: white;
 }
+
 /* fine aside  */
 
 
@@ -238,6 +244,7 @@ nav ul div {
     align-content: flex-start;
 }
 
+
         /* card  */
 .card {
     margin-top: 30px;
@@ -290,7 +297,6 @@ nav ul div {
 
 
  /* inizio footer  */
- 
 footer {
     height: 90px;
     background-color: #282828;
@@ -300,6 +306,7 @@ footer {
     color: gray;
 }
 
+
     /* sx */
 footer i:hover {
     cursor: pointer;
@@ -308,11 +315,11 @@ footer i:hover {
 #foot_sx {
     float: left;
     height: 100%;
-    width: 25%;
+    width: 26%;
     height: auto;
     display: flex;
     align-items:center;
-    gap: 3%;
+    gap: 8%;
 }
 
 .fa-heart {
@@ -332,7 +339,7 @@ footer i:hover {
 #foot_brano {
     display: flex;
     align-items:center;
-    gap: 2%;
+    gap: 2.5%;
 }
 
 #sinister {
@@ -361,10 +368,10 @@ footer h4 {
     text-decoration: underline;
 }
 
-    /* center  */
 
+    /* center  */
 #foot_center {
-    width: 50%;
+    width: 48%;
     height: auto;
     color: white;
 }
@@ -430,7 +437,7 @@ footer .fa-play-circle:hover{
     /* dx */
 #foot_dx {
     height: 100%;
-    width: 25%;
+    width: 26%;
     height: 20%;
     display: flex;
     justify-content: flex-end;
@@ -450,7 +457,7 @@ footer .fa-play-circle:hover{
 @media all and (max-height: 750px) {
    
     #nav_playlist ul{
-        height: auto;
+        height: 230px;
     }
 
     #footer_aside{
@@ -478,6 +485,10 @@ footer .fa-play-circle:hover{
         justify-content: space-around;
     }
 
+    .card i {
+        font-size: 9vw;
+    }
+    
 }
 
 @media all and (max-width:550px) {
@@ -509,6 +520,11 @@ footer .fa-play-circle:hover{
     .card{
         width: 36vw;
     }
+
+    .card i {
+        font-size: 15vw;
+    }
+
 
     .img_song {
         text-align: center;
