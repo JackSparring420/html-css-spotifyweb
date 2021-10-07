@@ -76,6 +76,7 @@ aside h3 {
     padding: 20px;
     color: white;
 }
+
 #new_playlist {
     display: flex;
     align-items:center;
@@ -95,7 +96,6 @@ aside h3 {
 #nav_playlist {
     margin-left: 20px;
     margin-top: 10px;
-
 }
 
 #nav_playlist ul {
@@ -131,6 +131,7 @@ nav li:hover {
     width: 20px;
     margin-right: 10px;
 }
+
 #footer_aside .nav_flex {
     margin: 15px 0;
 }
@@ -230,7 +231,6 @@ nav ul div {
     position: absolute;
     bottom: 10px;
     left: 40%;
-
 }
 
 .conteiner {
